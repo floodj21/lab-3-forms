@@ -37,3 +37,6 @@ a:hover     {
     color: #333366;
 }
 
+input[type=text] {
+	color: red;
+}
