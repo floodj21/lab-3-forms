@@ -1,0 +1,39 @@
+body {
+    color: black;
+    width: 700px;
+    margin-left: 10px;
+}
+
+main {
+    margin: 10px;
+}
+
+/* headings */
+h1, h2, h3 {
+    color: #330066; 
+}
+
+/* links */
+a:link, a:visited, a:active  {
+	background-color: transparent; 
+	text-decoration: none; 
+        font-size: 13px;
+	font-weight: bold;
+}
+
+a:link, a:visited {
+    text-decoration: none; 
+    color: #3322cc; /* gold */
+}
+
+a:active    {
+    color: #0000CC;  
+    background-color: #FFDD00; /* gold */
+}
+
+a:hover     {
+    background-color: #FFCC00; 
+    text-decoration: none; 
+    color: #333366;
+}
+
