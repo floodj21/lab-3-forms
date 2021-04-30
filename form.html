@@ -18,9 +18,9 @@ body {font-family: sans-serif;}
 
   <body>
     <h1>Select Your Sandwich!&#8482;</h1>
-    <form>
+    <form id="sandwich">
 	    <label for="name">Enter your name to get started:</label><br>
-	    <input type="text" id="name" name="name"><br>
+	    <input type="text" id="name" class="form-control" placeholder="Name"  name="name"><br>
 
     <h3>Select one bread:</h3>
 
@@ -79,20 +79,24 @@ body {font-family: sans-serif;}
 
 
 	<h3>For Here or To Go:</h3>
-
-	    <input type="radio" id="here" name="ordertype" value="here" checked>
-	    <label for="here">For Here</label><br>
-	    <input type="radio" id="togo" name="ordertype" value="togo">
-	    <label for="togo">To Go</label><br>
-
+	<div class="form-check form-check-inline">
+	    <input type="radio" class="form-check-input" id="inlineCheckboxhere" name="ordertype" value="here" checked>
+	    <label for="inlineCheckboxhere" class="form-check-label">For Here</label><br>
+	 </div>
+	<div class="form-check form-check-inline">
+	    <input type="radio" class="form-check-input" id="inlineCheckboxtogo" name="ordertype" value="togo">
+	    <label for="inlineCheckboxtogo" class="form-check-label">To Go</label><br>
+	</div><br>
 		<label for="notes">Customer Notes:</label><br>
 	    <input type="text" id="notes" name="notes"><br>
-	<input type="submit" value="Submit">
-	<input type="reset">
-	</form>
-    <a href="/~floodj/">Home Page</a>
-    <footer>
+    </form><br>
+    <section id="buttons">
+	    <button form="sandwich" class="btn btn-primary" name="submit" type="submit">Submit</button>
+	    <button form="sandwich" class="btn btn-outline-danger"  name="reset" type="reset">Reset</button>
+    </section>
+	    <footer class="bg-light text-md-start">
       <p>
+      	<a href="/~floodj/">Home Page</a>
 	<cite>Page by Jacob Flood for CSCI335 on 4/27/21</cite>
       </p>
     </footer>
